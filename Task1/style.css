@@ -1,0 +1,99 @@
+* {
+    padding: 0PX;
+    margin: 0PX;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    left: 20%;
+    top: 10%;
+    height: 500px;
+    width: 60%;
+    /* border: 2px solid; */
+    gap: 20px;
+
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(229, 153, 153);
+}
+
+.img {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 100%;
+    height: 20%;
+
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover,
+.btn6:hover,
+.btn7:hover {
+    background-color: brown;
+    transition: background-color 0.4s ease;
+}
+
+.btn1:hover~.img {
+    transform: translateX(100px);
+    transition: transform 0.4s ease;
+}
+
+.btn2:hover~.img {
+    transform: scale(2);
+    transition: transform 0.4s ease;
+    width: 50%;
+}
+
+.btn3:hover~.img {
+    transform: skew(30deg);
+    transition: transform 0.4s ease;
+}
+
+.btn4:hover~.img {
+    transform: rotate(360deg);
+    transition: transform 0.4s ease;
+    width: 10%;
+
+}
+
+.btn5:hover~.img {
+    transform: rotate(360deg) scale(1.5);
+    width: 40%;
+    transition: transform 0.4s ease;
+
+}
+
+.btn6:hover~.img {
+    transform: rotate(360deg) skew(15deg);
+    width: 40%;
+    transition: transform 0.4s ease;
+
+}
+
+.btn7:hover~.img {
+    transform: rotate(360deg) translate(50px, 50px);
+    width: 40%;
+    transition: transform 0.4s ease;
+
+}
